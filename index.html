@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/bootstrap-5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="asset/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="asset/fontawesome-6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+
+    <script src="asset/js/jquery-3.6.0.min.js"></script>
+    <!--    <script src="asset/bootstrap-5.2.0/js/bootstrap.min.js"></script>-->
+    <script src="asset/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="asset/slick-1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                <img src="asset/images/logo.png" alt="">
+            </a>
+            <div class="dropdown dropdown-mobile">
+                <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="nav-mobile">
+                        <div class="head">Thông tin cá nhân</div>
+                        <div class="menu-box">
+                            <a><i class="fa-solid fa-envelope"></i> tpquynhngan@gmail.com</a>
+                            <a><i class="fa-solid fa-database"></i> Số lượt tra cứu: <strong class="text-primary">0
+                                lượt</strong></a>
+                            <a href="./lich-su.html"><i class="fa-solid fa-clock-rotate-left"></i> Xem lịch sử tra cứu</a>
+                            <a><i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất</a>
+                        </div>
+                        <div class="menu-mobile">
+                            <a class="menu-mobile-item" href=""><img src="./asset/images/icon/product.svg" alt=""> Sản
+                                phẩm</a>
+                            <a class="menu-mobile-item" href=""><img src="./asset/images/icon/price.svg" alt=""> Bảng
+                                giá</a>
+                            <a class="menu-mobile-item" href=""><img src="./asset/images/icon/blog.svg" alt=""> Blog</a>
+                            <a class="menu-mobile-item" href=""><img src="./asset/images/icon/mail-mobile.svg" alt="">
+                                Liên hệ</a>
+                            <div class="lst-social">
+                                <div class="mb-1">Facebook: <a href="">thansohoc/facebook</a></div>
+                                <div class="mb-1">Gmail: xemthansovn@gmail.com</div>
+                                <div>Hotline: 096.2345.346</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">TRA CỨU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./san-pham.html">BÁO CÁO SỐ HỌC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bang-gia.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">hỏi đáp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lien-he.html">khách hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lien-he.html">liên hệ</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center box-profile">
+                    <button class="btn btn-auth h6 btn-base">ĐĂNG KÝ NHẬN BÁO CÁO</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="banner">
+    <div class="container">
+        <div class="banner-box">
+            <div class="h3">KHÁM PHÁ BẢN THÂN VỚI CUỐN BÁO CÁO</div>
+            <div class="banner-title my-3 txt-gradient">BẢN ĐỒ CUỘC ĐỜI</div>
+            <div class="d-flex justify-content-center">
+                <p class="m18 m990">Mỗi con số, mỗi chữ cái trong họ tên và ngày tháng năm sinh của bạn đều hàm chứa những ý nghĩa đặc biệt có ảnh hưởng lớn đến cuộc đời của bạn. Hãy cùng chúng tôi dùng Số Học Pytago khám phá sự đặc biệt của chính bạn nhé.</p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-lg-6">
+                    <div class="wrap-form-search">
+                        <form action="" class="form-search">
+                            <div class="mb-4">
+                                <label for="formGroupExampleInput" class="form-label">Họ tên:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                       placeholder="Họ và tên *">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Ngày tháng năm sinh:</label>
+                                <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="dd/mm/yyyy">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-base">TRA CỨU</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="asset/images/banh-xe-cuoc-doi.svg" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-info">
+    <div class="container">
+        <div class="title-icon">
+            <div class="title-icon-btn">
+                <img src="asset/images/icon-title-left.svg" alt="">
+                <span>BÁO CÁO SỐ HỌC</span>
+                <img src="asset/images/icon-title-right.svg" alt="">
+            </div>
+            <div class="title-gra">Bạn là phiên bản duy nhất</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="box-rate">
+                    <div class="box-rate-title h5 mb-3 ucase">Vuốt lên để xem nội dung chỉ số</div>
+                    <div class="box-rate-list">
+                        <div class="box-rate-list-h">
+                            <div class="rate-item">
+                                <h5>đường đời</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Chỉ số thái độ</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Sức mạnh tên riêng</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Chỉ số linh hồn</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Chỉ số nhân cách</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Chỉ số trưởng thành</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Số nợ bài học</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Chỉ số cầu nối</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                            <div class="rate-item">
+                                <h5>Chỉ số cân bằng</h5>
+                                <p>Đường đời là chỉ số quan trọng nhất trong Thần số học Pytagore. Nó thể hiện tính cách, năng lực cốt lõi, những mặt tốt và những mặt còn hạn chế của một con người. Nắm vững Chỉ số Đường đời là điều cần thiết để thấu hiểu bản thân, làm chủ cuộc đời chính mình.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="tbl-rate">
+                    <div class="i-index">
+                        <span>Bài học đường đời</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số thái độ</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số ngày sinh</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Sức mạnh tên riêng</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số linh hồn</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số nhân cách</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số trưởng thành</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Số nợ bài học</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số cầu nối</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                    <div class="i-index">
+                        <span>Chỉ số cân bằng</span>
+                        <span><img src="asset/images/tag.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="h3 txt-gradient text-center mt-5">VẬN NIÊN 2024-2025</div>
+                <div class="txt-vn mb-3">01/01/2024-01/01/2025</div>
+                <div class="lst-index">
+                    <div class="index-item">
+                        <span>Số cơ hội</span>
+                        <img src="asset/images/tag.png" alt="">
+                    </div>
+                    <div class="index-item">
+                        <span>Số cơ hội</span>
+                        <img src="asset/images/tag.png" alt="">
+                    </div>
+                    <div class="index-item">
+                        <span>Số cơ hội</span>
+                        <img src="asset/images/tag.png" alt="">
+                    </div>
+                </div>
+                <div class="h3 txt-gradient text-center mb-4">10 đỉnh cao cuộc đời</div>
+                <div class="tag-index">
+                    <span>5 đỉnh cơ hội:</span>
+                    <div class="tag-index-lst">
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="tag-index">
+                    <span>5 đỉnh cơ hội:</span>
+                    <div class="tag-index-lst">
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                        <div><img src="asset/images/tag.png" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-dk mt-5">
+    <div class="container">
+        <div class="title-icon">
+            <div class="title-icon-btn">
+                <img src="asset/images/icon-title-left.svg" alt="">
+                <span>ĐĂNG KÝ</span>
+                <img src="asset/images/icon-title-right.svg" alt="">
+            </div>
+            <div class="title-gra">NHẬN BÀI SỐ HỌC FULL 17 CHỈ SỐ</div>
+            <p class="text-center text-white">Bạn vừa trải nghiệm miễn phí 2 chỉ số Đường đời và Cân bằng trong Bài số học của bạn.Để có bức tranh tổng quan hơn về cuộc đời bạn trong hiện tại và tương lai. Tình duyên, sự nghiệp và khó khăn thách thức bạn sẽ gặp phải, những khuyến nghị giúp bạn chuẩn bị tốt hơn cho hành trình sắp tới, vui lòng mua Bài Số Học đầy đủ nội dung 17 Chỉ Số theo hướng dẫn bên dưới.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="box-regis">
+                    <div class="bx-title">
+                        <div class="title">Cấp tài khoản tự xuất File Pdf</div>
+                        <div class="title-sub">Tích chọn vào ô tròn bên dưới</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="chooseType" id="view1">
+                            <label class="form-check-label" for="view1">
+                                VIP 1: Xem cho 05 người - <span class="alert-color">300.000đ</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="chooseType" id="view2">
+                            <label class="form-check-label" for="view2">
+                                VIP 2: Xem cho 10 người - <span class="alert-color">500.000đ</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="chooseType" id="view3">
+                            <label class="form-check-label" for="view3">
+                                VIP 3: Xem cho 20 người - <span class="alert-color">800.000đ</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="chooseType" id="view4">
+                            <label class="form-check-label" for="view4">
+                                VIP 4: Xem cho 30 người - <span class="alert-color">990.000đ</span>
+                            </label>
+                        </div>
+                        <form action="" class="form-regis-b mt-3">
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="view5"
+                                       placeholder="Họ và tên *">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="date1" placeholder="Email hoặc SĐT nhận TK xuất File Pdf">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-base h5 mw200">ĐĂNG KÝ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="box-payment">
+                    <div class="pay-item">
+                        <div class="icon">
+                            <img src="asset/images/icon/wallet.svg" alt="">
+                        </div>
+                        <div class="ct">
+                            <div class="title">thanh toán</div>
+                            <ul>
+                                <li>STK: 5388531</li>
+                                <li>Người nhận: PHẠM MINH ĐỨC</li>
+                                <li>Số tiền: ...</li>
+                                <li>Nội dung CK: Họ Tên + Ngày Sinh + SĐTVD </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pay-item">
+                        <div class="icon">
+                            <img src="asset/images/icon/wallet.svg" alt="">
+                        </div>
+                        <div class="ct">
+                            <div class="title">NHẬN BÀI</div>
+                            <p>Sau khi thanh toán thành công, vui lòng gửi tin nhắn qua Zalo ...
+                                Chúng tôi sẽ gửi File Bài số học đầy đủ nội dung 17 chỉ số cho bạn ngay. ( File Pdf + File MP3 sách nói )</p>
+                        </div>
+                    </div>
+                    <div class="pay-item">
+                        <div class="icon">
+                            <img src="asset/images/icon/wallet.svg" alt="">
+                        </div>
+                        <div class="ct">
+                            <p>Bạn sẽ được cấp gói tài khoản đăng nhập vào hệ thống tự xuất file báo cáo Pdf Dễ dàng, tiện lợi, nhanh chóng. Phù hợp với nhu cầu xuất nhiều File (KD hoặc tặng nhiều) Không giới hạn thời gian sử dụng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title font2 text-center mb-4">Liên hệ chuyên gia để luận giải chi tiết</h2>
+            </div>
+            <div class="col-12">
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <a href=""><img src="./asset/images/icon/phone.svg" alt=""> 093.034.948</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href=""><img src="./asset/images/icon/email.svg" alt=""> xemthansovn@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href=""><img src="./asset/images/icon/facebook.svg" alt=""> thansohoc/facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-feedback">
+    <div class="title-gra">FEEDBACK KHÁCH HÀNG</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="g-4" id="slide-feedback">
+                    <div class="feedback-wrap">
+                        <div class="feedback-item">
+                            <img src="asset/images/fb.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="feedback-wrap">
+                        <div class="feedback-item">
+                            <img src="asset/images/fb.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="feedback-wrap">
+                        <div class="feedback-item">
+                            <img src="asset/images/fb.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="feedback-wrap">
+                        <div class="feedback-item">
+                            <img src="asset/images/fb.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="feedback-wrap">
+                        <div class="feedback-item">
+                            <img src="asset/images/fb.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="logo-footer">
+                    <img src="./asset/images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <h5 class="bold700 mb-3">Liên hệ</h5>
+                <div>
+                    <p><i class="fa-solid fa-phone"></i> 098.938.333</p>
+                    <p><i class="fa-solid fa-envelope"></i> abc@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Timecity - Hai Bà Trưng - Hà Nội</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <h5 class="bold700 mb-3">Fanpage</h5>
+            </div>
+            <div class="col-6 col-md-3">
+                <h5 class="bold700 mb-3">Hình thức thanh toán</h5>
+                <div>
+                    <h6 class="">Ngân hàng vietcombank</h6>
+                    <p>098765927828</p>
+                    <h6 class="">Ngân hàng techcombank</h6>
+                    <p>098765927828</p>
+                    <h6 class="">Ngân hàng tienphongbank</h6>
+                    <p>098765927828</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+
+<!--modal login-->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="logo-modal">
+                    <img src="./asset/images/logo.png" alt="">
+                </div>
+                <form action="" class="form-register">
+
+                    <div class="form-info">
+                        <h3 class="text-center font2 mb-3 bold700">Tiếp tục với số điện thoại</h3>
+                        <div class="mb-5">
+                            <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn ">
+                            <div class="input-error text-center mt-1 justify-content-center">
+                                <img src="./asset/images/icon/warning.svg" alt=""> Vui lòng nhập đúng số điện thoại.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-info">
+                        <h3 class="text-center font2 mb-3 bold700">Nhập mã xác minh</h3>
+                        <p class="text-center mb-0">Vui lòng nhập mã gửi qua SMS tới số</p>
+                        <div class="phone-user text-center mb-3">+84 123 456 789</div>
+                        <div class="mb-5">
+                            <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn ">
+                            <div class="input-error text-center mt-1 justify-content-center">
+                                <img src="./asset/images/icon/warning.svg" alt=""> Có lỗi xảy ra. Vui lòng thử lại.
+                            </div>
+
+                            <div class="resend-otp">Gửi lại mã</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-primary btn-submit">Tiếp tục</button>
+                    </div>
+                    <div class="login-other-method">
+                        <div class="text-border"><span>Đăng nhập bằng tài khoản khác</span></div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-google btn-light"><img src="./asset/images/icon/google.svg" alt="">Continue
+                                with google
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal thanh toan-->
+<div class="modal fade" id="modalPayment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="logo-modal">
+                    <img src="./asset/images/logo.png" alt="">
+                </div>
+                <div class="">
+                    <h3 class="text-center font2 mb-3 bold700">Hình thức thanh toán</h3>
+                    <div class="payment-method">
+                        <div class="py-3 d-flex align-items-center bold" data-bs-toggle="collapse" href="#banking" role="button" aria-expanded="false" aria-controls="banking">
+                            <img src="asset/images/icon/bank.svg" alt="" class="me-2"> Chuyển khoản ngân hàng
+                        </div>
+                        <div class="collapse" id="banking">
+                            <div class="card border-top card-body border-0 p-0 mt-2">
+                                <div class="d-flex flex-md-row flex-column row">
+                                    <div class="pm-number p-3 col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <h6>Ngân hàng VP Bank</h6>
+                                            <div>Chủ TK: Nguyễn Minh Đức</div>
+                                            <div>STK: 69.59.733</div>
+                                        </div>
+                                        <div>
+                                            <h6>Ngân hàng VP Bank</h6>
+                                            <div>Chủ TK: Nguyễn Minh Đức</div>
+                                            <div>STK: 69.59.733</div>
+                                        </div>
+                                    </div>
+                                    <div class="warning-note bg-gray-300 p-3 col-12 col-md-6">
+                                        <h6 class="text-danger">* Lưu ý:</h6>
+                                        <div>-Nội dung chuyển khoản: <strong>SĐT của bạn</strong></div>
+                                        <div>-Sau khi chuyển khoản vui lòng nhắn tin theo cú pháp: <strong>Email đăng nhập + SĐT_CỦA_BẠN</strong> đến số <strong>096.2345.436</strong> để xác nhận</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-method">
+                        <div class="py-3 d-flex align-items-center bold" data-bs-toggle="collapse" href="#momo" role="button" aria-expanded="false" aria-controls="momo">
+                            <img src="asset/images/icon/momo.png" alt="" class="me-2"> Chuyển khoản qua MOMO
+                        </div>
+                        <div class="collapse" id="momo">
+                            <div class="card border-top card-body border-0 p-0 mt-2">
+                                <div class="d-flex flex-md-row flex-column row">
+                                    <div class="pm-number p-3 col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <ul>
+                                                <li>Gửi qua số: <strong>0987654345</strong></li>
+                                                <li>Hoặc quét mã QR</li>
+                                            </ul>
+                                            <div class="d-flex justify-content-center">
+                                                <img src="./asset/images/momo-method.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="warning-note bg-gray-300 p-3 col-12 col-md-6">
+                                        <h6 class="text-danger">* Lưu ý:</h6>
+                                        <div>-Nội dung chuyển khoản: <strong>SĐT của bạn</strong></div>
+                                        <div>-Sau khi chuyển khoản vui lòng nhắn tin theo cú pháp: <strong>Email đăng nhập + SĐT_CỦA_BẠN</strong> đến số <strong>096.2345.436</strong> để xác nhận</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./asset/js/svg.min.js"></script>
+<script src="asset/js/source.js"></script>
+<script src="./asset/js/Point.js"></script>
+<script src="./asset/js/Shape.js"></script>
+<script>
+    // w = 350, h = 425 (h = 1.2*w)
+    const shape = new Shape('#svg_shape', 400, 400*1.2);
+    shape.drawShape({
+        p1: {text: 1, color: '#6672F2'},
+        p2: {text: 2222, color: '#8E97FB'},
+        p3: {text: 3, color: '#6672F2'},
+        p4: {text: 4, color: '#8E97FB'},
+        p5: {text: 5, color: '#6672F2'},
+        p6: {text: 6, color: '#8E97FB'},
+        p7: {text: 7, color: '#8E97FB'},
+        p8: {text: 8, color: '#8E97FB'},
+        p9: {text: 9, color: '#8E97FB'},
+        p10: {text: 10, color: '#8E97FB'},
+        p11: {text: 11, color: '#8E97FB' }
+    });
+</script>
+</body>
+</html>
