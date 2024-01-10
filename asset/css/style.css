@@ -253,3 +253,7 @@
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+.btn-copy{
+    color: #FFD072;
+    cursor: pointer;
+}

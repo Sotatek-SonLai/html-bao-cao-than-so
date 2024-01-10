@@ -85,3 +85,7 @@ $('#back-to-top').click(function () {
     return false;
 });
 
+$(".btn-copy").click(function() {
+    const txt = $(this).data('text')
+    navigator.clipboard.writeText(txt)
+})
