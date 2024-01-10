@@ -1118,4 +1118,66 @@ div#accordionFlushExample {
     padding: 20px;
     box-shadow: none;
 }
+.info-footer{
+    display: flex;
+    margin-bottom: 15px;
+    gap: 12px;
+}
+.title-gra.text-footer {
+    position: relative;
+    margin-bottom: 60px;
+}
 
+.title-gra.text-footer:before {
+    content: '';
+    position: absolute;
+    width: calc(50% - 130px);
+    height: 1px;
+    background: #FFD072;
+    left: 0;
+    top: 50%;
+}
+
+.title-gra.text-footer:after {
+    content: '';
+    position: absolute;
+    width: calc(50% - 130px);
+    height: 1px;
+    background: #FFD072;
+    right: 0;
+    top: 50%;
+}
+
+.title-gra.text-footer span {
+    z-index: 51;
+}
+.slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    color: #fff;
+    content: '';
+    margin-top: 30px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: white !important;
+    font-size: 42px !important;
+}
+
+.slick-next:before {
+}
+
+.slick-next {
+    right: -40px;
+}
+
+.slick-prev {
+    left: -60px;
+}
+
+.feedback-item {}
+.navbar-toggler{
+    background-color: #fff;
+}

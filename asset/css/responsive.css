@@ -79,10 +79,92 @@
     .img-title {
         width: 160px;
     }
+    .nav-link {
+        text-align: right !important;
+        padding-right: 0 !important;
+    }
+
+    .box-profile {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .tbl-rate{
+        margin-top: 35px;
+    }
+    .title-gra {
+        font-size: 30px;
+    }
+    .box-payment, .box-mess {
+        margin-top: 50px;
+    }
 }
 
 /*mobile*/
 @media(max-width: 575px){
+    .title-icon-btn span {
+        min-width: auto;
+        font-size: 13px;
+        padding: 10px;
+        height: auto !important;
+        line-height: 21px;
+    }
+
+    .title-icon-btn {
+        align-items: center;
+    }
+
+    .title-icon-btn img {
+        width: 70px;
+    }
+
+    .banner {
+        padding: 40px 15px;
+    }
+
+    .form-search .btn {
+        max-width: 90%;
+        min-width: 150px;
+    }
+
+    .i-index * {font-size: 12px !important;}
+
+    .i-index img {
+        width: 12px;
+    }
+
+    .rate-item h5 {
+        padding: 10px;
+    }
+
+    .index-item {
+        width: 120px;
+        height: 150px;
+    }
+
+    .tag-index {
+        gap: 0;
+    }
+
+    .tag-index span {
+        font-size: 15px;
+        width: 140px;
+    }
+
+    .title-gra {
+        line-height: 32px;
+    }
+
+    .title-gra.text-footer {
+        margin-bottom: 30px;
+    }
+
+    .txt-f{
+        font-size: 20px;
+        text-align: center;
+    }
+    .title-gra{
+        font-size: 22px;
+    }
     .form-search{
         width: 100%;
     }
