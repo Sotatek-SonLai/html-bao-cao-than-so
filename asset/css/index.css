@@ -1210,3 +1210,50 @@ div#accordionFlushExample {
 .slick-prev {
     left: 0;
 }
+.form-history{
+    display: flex;
+    min-width: 400px;
+    max-width: 445px;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 34px;
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 25px;
+}
+.form-history input {
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    border: none;
+    padding: 3px 10px;
+}
+.form-history button{
+    height: 100%;
+    border: none;
+    background: var(--Seccondary-color, #5851EA);
+    color: #fff;
+    flex: 1;
+}
+.table-history{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 21px 6px rgba(0,0,0,.1);
+    margin-top: 40px;
+    overflow-x: auto;
+}
+.modal-body{
+    padding: 0 25px 25px 25px;
+}
+.table-history td, .table-history th {
+    padding: 3px 8px;
+}
+.table-history td{
+    min-width: 130px;
+    padding: 8px 10px;
+}
+.table-history thead th {
+
+    padding: 10px 8px !important;
+    text-align: left;
+    background: #e5e5e5 !important;
+}

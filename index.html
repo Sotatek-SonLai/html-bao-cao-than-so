@@ -361,9 +361,12 @@
                             <img src="asset/images/icon/wallet.svg" alt="">
                         </div>
                         <div class="ct">
-                            <p>Bạn sẽ được cấp gói tài khoản đăng nhập vào hệ thống tự xuất file báo cáo Pdf Dễ dàng,
-                                tiện lợi, nhanh chóng. Phù hợp với nhu cầu xuất nhiều File (KD hoặc tặng nhiều) Không
-                                giới hạn thời gian sử dụng.</p>
+                            <p>Bạn sẽ được cấp gói tài khoản đăng nhập vào hệ thống tự xuất file báo cáo Pdf Dễ dàng, tiện lợi, nhanh chóng. Phù hợp với nhu cầu xuất nhiều File (KD hoặc tặng nhiều) Không giới hạn thời gian sử dụng.</p>
+
+                            <div class="form-history">
+                                <input type="text" placeholder="Nhập số điện thoại">
+                                <button  data-bs-toggle="modal" data-bs-target="#modalHistory">Xem lại báo cáo đã mua</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -715,79 +718,70 @@
 
 
 <!-- Modal thanh toan-->
-<div class="modal fade" id="modalPayment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalHistory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="logo-modal">
-                    <img src="./asset/images/logo.png" alt="">
-                </div>
-                <div class="">
-                    <h3 class="text-center font2 mb-3 bold700">Hình thức thanh toán</h3>
-                    <div class="payment-method">
-                        <div class="py-3 d-flex align-items-center bold" data-bs-toggle="collapse" href="#banking"
-                             role="button" aria-expanded="false" aria-controls="banking">
-                            <img src="asset/images/icon/bank.svg" alt="" class="me-2"> Chuyển khoản ngân hàng
-                        </div>
-                        <div class="collapse" id="banking">
-                            <div class="card border-top card-body border-0 p-0 mt-2">
-                                <div class="d-flex flex-md-row flex-column row">
-                                    <div class="pm-number p-3 col-12 col-md-6">
-                                        <div class="mb-3">
-                                            <h6>Ngân hàng VP Bank</h6>
-                                            <div>Chủ TK: Nguyễn Minh Đức</div>
-                                            <div>STK: 69.59.733</div>
-                                        </div>
-                                        <div>
-                                            <h6>Ngân hàng VP Bank</h6>
-                                            <div>Chủ TK: Nguyễn Minh Đức</div>
-                                            <div>STK: 69.59.733</div>
-                                        </div>
-                                    </div>
-                                    <div class="warning-note bg-gray-300 p-3 col-12 col-md-6">
-                                        <h6 class="text-danger">* Lưu ý:</h6>
-                                        <div>-Nội dung chuyển khoản: <strong>SĐT của bạn</strong></div>
-                                        <div>-Sau khi chuyển khoản vui lòng nhắn tin theo cú pháp: <strong>Email đăng
-                                            nhập + SĐT_CỦA_BẠN</strong> đến số <strong>096.2345.436</strong> để xác nhận
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="payment-method">
-                        <div class="py-3 d-flex align-items-center bold" data-bs-toggle="collapse" href="#momo"
-                             role="button" aria-expanded="false" aria-controls="momo">
-                            <img src="asset/images/icon/momo.png" alt="" class="me-2"> Chuyển khoản qua MOMO
-                        </div>
-                        <div class="collapse" id="momo">
-                            <div class="card border-top card-body border-0 p-0 mt-2">
-                                <div class="d-flex flex-md-row flex-column row">
-                                    <div class="pm-number p-3 col-12 col-md-6">
-                                        <div class="mb-3">
-                                            <ul>
-                                                <li>Gửi qua số: <strong>0987654345</strong></li>
-                                                <li>Hoặc quét mã QR</li>
-                                            </ul>
-                                            <div class="d-flex justify-content-center">
-                                                <img src="./asset/images/momo-method.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="warning-note bg-gray-300 p-3 col-12 col-md-6">
-                                        <h6 class="text-danger">* Lưu ý:</h6>
-                                        <div>-Nội dung chuyển khoản: <strong>SĐT của bạn</strong></div>
-                                        <div>-Sau khi chuyển khoản vui lòng nhắn tin theo cú pháp: <strong>Email đăng
-                                            nhập + SĐT_CỦA_BẠN</strong> đến số <strong>096.2345.436</strong> để xác nhận
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h3 class="h3 text-center mb-3">Lịch sử tra cứu</h3>
+                <div class="table-history">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Ngày sinh</th>
+                            <th scope="col">Ngày tra cứu</th>
+                            <th scope="col">Xem báo cáo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Võ Quyền Anh</td>
+                            <td>10/10/2024</td>
+                            <td>10/10/2024</td>
+                            <td><a href="">Tra cứu</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Võ Quyền Anh</td>
+                            <td>10/10/2024</td>
+                            <td>10/10/2024</td>
+                            <td><a href="">Tra cứu</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Võ Quyền Anh</td>
+                            <td>10/10/2024</td>
+                            <td>10/10/2024</td>
+                            <td><a href="">Tra cứu</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Võ Quyền Anh</td>
+                            <td>10/10/2024</td>
+                            <td>10/10/2024</td>
+                            <td><a href="">Tra cứu</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Võ Quyền Anh</td>
+                            <td>10/10/2024</td>
+                            <td>10/10/2024</td>
+                            <td><a href="">Tra cứu</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Võ Quyền Anh</td>
+                            <td>10/10/2024</td>
+                            <td>10/10/2024</td>
+                            <td><a href="">Tra cứu</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
