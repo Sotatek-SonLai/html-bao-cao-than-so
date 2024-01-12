@@ -87,7 +87,7 @@ $('#slide-feedback').slick({
         {
             breakpoint: 480,
             settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button>',
                 nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>',
