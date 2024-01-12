@@ -30,34 +30,6 @@ $sliderMobileOnly.on("afterChange", function(){
 
 
 
-// slide feedback
-$('#slide-feedback').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    dots: true,
-    responsive: [
-        {
-            breakpoint: 900,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }
-    ]
-});
-
 
 
 
@@ -89,3 +61,41 @@ $(".btn-copy").click(function() {
     const txt = $(this).data('text')
     navigator.clipboard.writeText(txt)
 })
+
+$('#slide-feedback').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>',
+    autoplay:true,
+    autoplaySpeed:1500,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>',
+
+                centerPadding:'0px',
+                // centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>',
+
+                centerPadding:'0px',
+                // centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
