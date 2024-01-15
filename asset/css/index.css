@@ -1300,3 +1300,18 @@ div#accordionFlushExample {
 .b-steps ul li {
     margin-bottom: 10px;
 }
+header .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #17236df0 !important;
+    z-index: 999;
+    box-shadow: 1px -11px 20px 4px rgba(0,0,0.1);
+}
+
+body {
+    padding-top: 80px;
+}
+button.navbar-toggler.collapsed span {
+    font-size: 14px;
+}
