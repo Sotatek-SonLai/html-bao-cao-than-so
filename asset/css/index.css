@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
 :root {
     --primaryColor: #6672F2;
     --bgColor: #39406B;
@@ -933,6 +934,9 @@ padding: 30px;
 .rate-item{
     margin-bottom: 25px;
 }
+.rate-item * {
+    font-weight: 700;
+}
 .rate-item h5{
     background: url("../images/bg-rate-item.png") no-repeat 100% 100%;
     padding: 45px 20px;
@@ -940,6 +944,26 @@ padding: 30px;
     text-transform: uppercase;
     font-weight: 700;
     background-size: 100%;
+    position: relative;
+}
+.rate-item h5 .number-index{
+    position: absolute;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    text-shadow: 0px 4px 15px rgba(255, 255, 255, 0.25);
+    font-family: 'Red Rose';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 83.333% */
+    text-transform: uppercase;
+    top: 17px;
+    right: 30px;
+    background: var(--Gradient-3, linear-gradient(90deg, #F4BD39 8.15%, #F7E893 53.12%, #F4BD39 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 }
 .rate-item p{
     color: var(--Primary-color, #19246A);
@@ -1256,4 +1280,23 @@ div#accordionFlushExample {
     padding: 10px 8px !important;
     text-align: left;
     background: #e5e5e5 !important;
+}
+.note-rate{
+    background: var(--Arlert-color, #FFD072);
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+.b-steps .title{
+    padding: 5px 10px;
+    border-radius: 3px 30px 3px 3px;
+    background: var(--Secondary-color, #6672F2);
+    color: #fff;
+    margin-bottom: 10px;
+}
+.b-steps ul{
+    padding-right: 10px;
+}
+.b-steps ul li {
+    margin-bottom: 10px;
 }
