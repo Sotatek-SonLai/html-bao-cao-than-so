@@ -65,11 +65,13 @@ $(".btn-copy").click(function() {
 $('#slide-feedback').slick({
     centerMode: true,
     centerPadding: '60px',
+    slidesToScroll: 3,
     slidesToShow: 3,
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>',
     autoplay:true,
     autoplaySpeed:1500,
+    infinite: true,
     responsive: [
         {
             breakpoint: 1024,
