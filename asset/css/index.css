@@ -21,13 +21,17 @@ body button:focus{
     outline: none !important;
 }
 body {
-    background: url("../images/bg-body.jpg") center;
+    background: url("../images/bg-fixed.jpg") center;
     background-size: cover;
     font-family: var(--fontBase);
     font-size: 14px;
     font-weight: 400;
     width: 100vw;
     overflow-x: hidden;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: top left;
+    background-attachment: fixed;
 }
 .font2 {
     font-family: var(--font2);
@@ -895,10 +899,10 @@ a {
     text-transform: uppercase;
 }
 .box-rate{
-padding: 30px;
+    padding: 30px;
     border-radius: 22px;
     border: 2px solid #CCA76F;
-     box-shadow: 0px 4px 26px 0px rgba(185, 192, 255, 0.25);
+    box-shadow: 0px 4px 26px 0px rgba(185, 192, 255, 0.25);
     background-size: 100% 100%;
     overflow: hidden;
     box-sizing: border-box;
